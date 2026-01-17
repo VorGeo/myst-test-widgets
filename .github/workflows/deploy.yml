@@ -44,7 +44,7 @@ jobs:
       - name: Install Jupyter dependencies
         run: |
           pip install jupyter ipykernel
-        - name: Build HTML Assets
+      - name: Build HTML Assets
         run: myst build --html --execute --debug
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
