@@ -17,11 +17,16 @@ platforms = ["osx-arm64"]
 myst_test_widgets = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+"myst:build" = "myst build --execute"
+"myst:start" = "myst start"
 
 [tool.pixi.dependencies]
-python = "==3.12"
-jupyter = ">=1.1.1,<2"
+geopandas = ">=1.1.2,<2"
 ipykernel = ">=7.1.0,<8"
-ipywidgets = ">=8.1.8,<9"
-numpy = ">=2.4.1,<3"
+jupyter = ">=1.1.1,<2"
+lonboard = ">=0.11.1,<0.12"
 matplotlib = ">=3.10.8,<4"
+mystmd = ">=1.5.0,<2"
+numpy = ">=2.4.1,<3"
+pyarrow = ">=22.0.0,<23"
+python = "==3.12"
