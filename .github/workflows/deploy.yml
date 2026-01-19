@@ -43,7 +43,7 @@ jobs:
           python-version: '3.12'
       - name: Install Jupyter dependencies
         run: |
-          pip install jupyter ipykernel
+          pip install jupyter ipykernel geopandas lonboard matplotlib pyarrow
       - name: Build HTML Assets
         run: myst build --html --execute --debug
       - name: Upload artifact
